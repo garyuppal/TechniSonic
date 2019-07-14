@@ -4,8 +4,6 @@ Created on Sun Jul 14 2019
 
 @author: gary uppal
 """
-import numpy as np 
-import sounddevice as sd 
 
 class PianoNote:
     STANDARD_PITCH = 440 # tuning for A4 key -- above middle c, middle c is c3

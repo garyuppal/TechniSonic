@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jul 14 2019
+
+@author: gary uppal
+"""
 import unittest
 from piano_note import PianoNote
 
