@@ -20,10 +20,10 @@ class TestNotePlayer(unittest.TestCase):
         desired = [440,880]
         self.assertListEqual(result,desired)
 
-    def test_getWaveForm(self):
-        result = self.player.getWaveForm(('a',4))
-        # desired = 
-        np.testing.assert_allclose(result,desired)
+    # def test_getWaveForm(self):
+    #     result = self.player.getWaveForm(('a',4))
+    #     # desired = 
+    #     np.testing.assert_allclose(result,desired)
 
 if __name__ == '__main__':
     unittest.main()
