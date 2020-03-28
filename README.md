@@ -1,5 +1,10 @@
 # TechniSound
-A computer music system to ``compose'' tunes offline; hopefully with some real-time functionality and machine learning routines
+A computer music system to read, play, and edit music
+
+## Goals
+- Recognize sheet music images and process into a sequence of notes
+- Play sequence of notes as pure frequency sound waves. Eventually add more realistic sounding notes to resemble actual instruments
+- Implement various filters and music editing methods
 
 ## References
 - Digitizing sheet music [here](https://web.stanford.edu/class/ee368/Project_Spring_1415/Reports/Stramer.pdf)
@@ -7,3 +12,4 @@ A computer music system to ``compose'' tunes offline; hopefully with some real-t
 
 ## To Do
 - [ ] Write tests for reading in sheet music
+- [ ] Machine learning to recognize notes in sheet music
