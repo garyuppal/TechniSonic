@@ -8,7 +8,7 @@ Created on Sun Jul 14 2019
 import numpy as np
 import sounddevice as sd
 import time
-from piano_note import PianoNote
+from technisound.piano_note import PianoNote
 
 
 class NotePlayer:
@@ -45,28 +45,4 @@ class NotePlayer:
         sd.stop()
 
 
-player = NotePlayer()
-# frequencies = player.getFrequencies([('a',4), ('a',5)])
-# print(frequencies)
 
-# note: key, octave, accidental, duration
-first_line = [('c', 4, 'n', 4), ('c', 4, 'n', 4), ('g', 4, 'n', 4), ('g', 4, 'n', 4),
-              ('a', 5, 'n', 4), ('a', 5, 'n', 4), ('g', 4, 'n', 2),
-              ('f', 4, 'n', 4), ('f', 4, 'n', 4), ('e', 4, 'n', 4), ('e', 4, 'n', 4),
-              ('d', 4, 'n', 4), ('d', 4, 'n', 4), ('c', 4, 'n', 2), ]
-middle_line = [('g', 4, 'n', 4), ('g', 4, 'n', 4), ('f', 4, 'n', 4), ('f', 4, 'n', 4),
-               ('e', 4, 'n', 4), ('e', 4, 'n', 4), ('d', 4, 'n', 2),
-               ('g', 4, 'n', 4), ('g', 4, 'n', 4), ('f', 4, 'n', 4), ('f', 4, 'n', 4),
-               ('e', 4, 'n', 4), ('e', 4, 'n', 4), ('d', 4, 'n', 2)]
-
-notes = first_line + middle_line
-notes = notes + first_line
-print(notes)
-print(len(notes))
-tune = player.getWaveForm(notes)
-print(tune.nbytes)
-
-print(len(tune))
-player.playWaveForm(tune)
-
-# test git

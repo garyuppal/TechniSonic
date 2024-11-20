@@ -4,7 +4,7 @@ setup(
     name='TechniSound',
     author='Gary Uppal',
     version='0.1dev',
-    packages=['technisound',],
+    packages=['technisound'],
 #    license='Creative Commons Attribution-Noncommercial-Share Alike license',
     install_requires=[
                     'numpy',
